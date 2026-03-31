@@ -33,13 +33,13 @@ function InteractiveSphere({ mouse }: { mouse: React.RefObject<{ x: number; y: n
     <mesh ref={meshRef} position={[2, 0.5, 0]} scale={1.2}>
       <icosahedronGeometry args={[1, 4]} />
       <MeshDistortMaterial
-        color="#8b5cf6"
-        roughness={0.1}
-        metalness={0.8}
+        color="#6d28d9"
+        roughness={0.2}
+        metalness={0.6}
         distort={0.4}
         speed={2}
         transparent
-        opacity={0.8}
+        opacity={0.9}
       />
     </mesh>
   )
@@ -73,13 +73,13 @@ function FloatingTorus({ mouse }: { mouse: React.RefObject<{ x: number; y: numbe
     <mesh ref={meshRef} position={[-2.5, -0.5, -1]} scale={0.8}>
       <torusGeometry args={[1, 0.4, 32, 64]} />
       <MeshWobbleMaterial
-        color="#06b6d4"
-        roughness={0.2}
-        metalness={0.6}
+        color="#0891b2"
+        roughness={0.3}
+        metalness={0.5}
         factor={0.3}
         speed={1.5}
         transparent
-        opacity={0.7}
+        opacity={0.85}
       />
     </mesh>
   )
@@ -114,11 +114,11 @@ function FloatingOctahedron({ mouse }: { mouse: React.RefObject<{ x: number; y: 
       <mesh ref={meshRef} position={[-1, 2, -2]} scale={0.6}>
         <octahedronGeometry args={[1]} />
         <meshStandardMaterial
-          color="#f472b6"
+          color="#db2777"
           roughness={0.3}
-          metalness={0.7}
+          metalness={0.6}
           transparent
-          opacity={0.6}
+          opacity={0.8}
         />
       </mesh>
     </Float>
@@ -154,11 +154,11 @@ function FloatingBox({ mouse }: { mouse: React.RefObject<{ x: number; y: number 
       <mesh ref={meshRef} position={[3, -1.5, -1.5]} scale={0.5}>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
-          color="#fbbf24"
-          roughness={0.4}
+          color="#d97706"
+          roughness={0.3}
           metalness={0.5}
           transparent
-          opacity={0.5}
+          opacity={0.75}
         />
       </mesh>
     </Float>
@@ -197,10 +197,10 @@ function ParticleField() {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={0.03}
-        color="#a78bfa"
+        size={0.04}
+        color="#7c3aed"
         transparent
-        opacity={0.6}
+        opacity={0.5}
         sizeAttenuation
       />
     </points>
@@ -210,10 +210,10 @@ function ParticleField() {
 function Scene({ mouse }: { mouse: React.RefObject<{ x: number; y: number }> }) {
   return (
     <>
-      <ambientLight intensity={0.4} />
-      <directionalLight position={[10, 10, 5]} intensity={1} color="#ffffff" />
-      <directionalLight position={[-10, -10, -5]} intensity={0.5} color="#8b5cf6" />
-      <pointLight position={[0, 5, 5]} intensity={0.8} color="#06b6d4" />
+      <ambientLight intensity={0.6} />
+      <directionalLight position={[10, 10, 5]} intensity={1.2} color="#ffffff" />
+      <directionalLight position={[-10, -10, -5]} intensity={0.6} color="#6d28d9" />
+      <pointLight position={[0, 5, 5]} intensity={1} color="#0891b2" />
       
       <InteractiveSphere mouse={mouse} />
       <FloatingTorus mouse={mouse} />
