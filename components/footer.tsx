@@ -31,7 +31,7 @@ export function Footer() {
             whileTap={{ scale: 0.98 }}
           >
             <Link href="/" className="flex items-center gap-3 group">
-              <motion.div 
+              <motion.div
                 whileHover={{ rotate: 10 }}
                 transition={{ type: "spring", stiffness: 300 }}
                 className="flex size-10 items-center justify-center rounded-xl bg-primary shadow-lg shadow-primary/10"
@@ -44,7 +44,7 @@ export function Footer() {
             </Link>
           </motion.div>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -84,7 +84,7 @@ export function Footer() {
           className="mt-12 pt-8 border-t border-border/30 text-center"
         >
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} TaskFlow. All rights reserved.
+            &copy; {new Date().getFullYear()} TaskFlow. Tech with Bryant.
           </p>
         </motion.div>
       </div>
