@@ -240,11 +240,7 @@ function TaskItem({ task, index, onToggle, onDelete, onEdit }: TaskItemProps) {
 }
 
 export function TodoApp() {
-  const [tasks, setTasks] = useState<Task[]>([
-    { id: "1", text: "Review project requirements", completed: true },
-    { id: "2", text: "Design user interface mockups", completed: false },
-    { id: "3", text: "Set up development environment", completed: false },
-  ])
+  const [tasks, setTasks] = useState<Task[]>([])
   const [newTask, setNewTask] = useState("")
 
   const addTask = () => {
