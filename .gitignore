@@ -4,14 +4,55 @@ __v0_devtools.tsx
 __v0_jsx-dev-runtime.ts
 .snowflake/
 .v0-trash/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
 .vercel/
-next.user-config.*
+
+# Node modules
+node_modules/
+.pnp
+.pnp.js
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
 
 # Environment variables
-.env*.local
+.env
+.env.local
+.env.*.local
 
-# Common ignores
-node_modules
-.next/
-.DS_Store
-.vercel
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Testing
+.nyc_output/
+coverage/
+
+# Temporary files
+.cache/
+tmp/
+temp/
+
+# Configuration
+next.user-config.*
+
